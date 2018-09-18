@@ -21,11 +21,6 @@ const gif = require("gif-search");
 const client = new Discord.Client({disableEveryone: true});
 
 const prefix = "$$";
-
-client.on('ready', () => {
-     client.user.setActivity("$$help",{type: 'WATCHING'});
-
-});
 /////////////////////////
 ////////////////////////
 
