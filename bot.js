@@ -23,7 +23,7 @@ const client = new Discord.Client({disableEveryone: true});
 const prefix = "@@";
 
 client.on('ready', () => {
-     client.user.setActivity("@@help-by ا̍حۡــمۘــد#3933 ",{type: 'WATCHING'});
+     client.user.setActivity("@@help-by ا̍حۡــمۘــد#3933",{type: 'WATCHING'});
 
 });
 /////////////////////////
