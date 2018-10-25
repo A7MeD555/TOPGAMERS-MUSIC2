@@ -22,9 +22,9 @@ const client = new Discord.Client({disableEveryone: true});
 
 const prefix = "@@";
 
-client.on('ready', () => {
-     client.user.setActivity("@@help-by ا̍حۡــمۘــد#3933",{type: 'WATCHING'});
-
+client.on("ready", () => {
+  console.log("Vulnix | Logged in! Server count: ${client.guilds.size}");
+  client.user.setGame(`.help | By أحمد`);
 });
 /////////////////////////
 ////////////////////////
@@ -318,10 +318,10 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === '@@help') {
+    if (message.content === '.help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
-        .setDescription('**برفكس البوت ($$)**')
+        .setDescription('**برفكس البوت (.)**')
         .addField('play', 'لتشغيل اغنية')
         .addField('join', 'دخول رومك الصوتي')
         .addField('disconnect', 'الخروج من رومك الصوتي')
